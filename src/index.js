@@ -1,2 +1,7 @@
-export { default as postgrestJwtAuth } from "./authProvider";
-export { default as postgrestClient } from "./dataProvider";
+import  postgrestJwtAuth from "./authProvider";
+import  postgrestClient from "./dataProvider";
+
+export {
+    postgrestJwtAuth,
+    postgrestClient
+}
