@@ -1,14 +1,12 @@
-# ra-postgrest-client : react-admin's dataProvider for postgREST 
+# react-admin-postgrest-client : react-admin's dataProvider for postgREST 
 
-**fork from https://github.com/tomberek/aor-postgrest-client  and port to [React-Admin](https://marmelab.com/react-admin/)  ( new name for  admin-on-rest version  2.0 )**
+**fork from https://github.com/alfonsodev/ra-postgrest-client  and port to [React-Admin](https://marmelab.com/react-admin/)  ( new name for  admin-on-rest version  2.0 )**
 
 thanks a lot to [tomberek](https://github.com/tomberek)
 
 For using [PostgRest](https://github.com/PostgREST/postgrest) with [react-admin](https://github.com/marmelab/react-admin), use the `postgrestClient` function to convert React-Admin's REST dialect into one compatible with postgREST.
 
 ## motivation
-
-reference to [postgrest-guide](https://github.com/tsingson/postgrest-guide)
 
 in a new project, we try to replace Admin Panel with new [React-Admin](https://github.com/marmelab/react-admin), this repo is bridge to [PostgRest](https://github.com/PostgREST/postgrest) 
 
@@ -24,7 +22,7 @@ in a new project, we try to replace Admin Panel with new [React-Admin](https://g
 ## Installation
 
 ``` 
-yarn add ra-postgrest-client
+yarn add react-admin-postgrest-client
 ```
 
 ## Usage
@@ -34,7 +32,7 @@ yarn add ra-postgrest-client
 import React from "react";
 import {Admin, Resource, Delete} from "react-admin";
 
-import postgrestClient from "ra-postgrest-client";
+import {postgrestClient} from "react-admin-postgrest-client";
 import {
     CategoryList,
     CategoryCreate,
@@ -63,8 +61,8 @@ export default App;
 
 clone the repo and build
 ```
-git clone https://github.com/tsingson/ra-postgrest-client
-cd ./ra-postgrest-client
+git clone https://github.com/wellers0n/react-admin-postgrest-client
+cd ./react-admin-postgrest-client
 make build
 ```
 
