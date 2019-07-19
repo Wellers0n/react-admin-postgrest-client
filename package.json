@@ -1,6 +1,6 @@
 {
   "name": "react-admin-postgrest-client",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "private": false,
   "description": "dataProvider for [react-admin](https://marmelab.com/react-admin/) ( admin-on-rest 2.0 ) to access [postgrest](https://postgrest.com) REST service",
   "main": "src/index.js",
