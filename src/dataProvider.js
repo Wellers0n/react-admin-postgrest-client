@@ -6,6 +6,7 @@ import {
   GET_MANY_REFERENCE,
   CREATE,
   UPDATE,
+  UPDATE_MANY,
   DELETE,
   DELETE_MANY
 } from "react-admin";
@@ -116,6 +117,12 @@ export default (apiUrl, httpClient = fetchJson) => {
       }
       case UPDATE: {
         url = `${apiUrl}/${resource}?id=eq.${params.id}`;
+        options.method = "PATCH";
+        options.body = JSON.stringify(params.data);
+        break;
+      }
+      case UPDATE_MANY: {
+        url = `${apiUrl}/${resource}?id=in.(${params.ids})`;
         options.method = "PATCH";
         options.body = JSON.stringify(params.data);
         break;
